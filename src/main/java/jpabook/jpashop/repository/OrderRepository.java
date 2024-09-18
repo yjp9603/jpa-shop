@@ -21,6 +21,17 @@ public class OrderRepository {
     }
 
 //    public List<Order> findAll(OrderSearch orderSearch) {
+//        QOrder order = Qorder.order;
+//        Qmember member = Qmember.member;
 //
+//        return query
+//                .select(order)
+//                .from(order)
+//                .join(order.member, member)
+//                .where(statusEq(orderSearch.getOrderStatus()),
+//                        nameLike(orderSearch.getMemberName()))
+//                .limit(1000)
+//                .fetch();
 //    }
+
 }
