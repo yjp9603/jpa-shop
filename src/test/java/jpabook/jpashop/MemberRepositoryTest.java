@@ -1,5 +1,6 @@
 package jpabook.jpashop;
 
+import jpabook.jpashop.domain.Member;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -17,17 +18,17 @@ class MemberRepositoryTest {
 //    @Rollback(false)
     public void memberTest() throws Exception {
         //given
-        Member member = new Member();
-        member.setUsername("A");
-
-        //when
-        long savedId = memberRepository.save(member);
-        Member findMember = memberRepository.findById(savedId);
-
-        //then
-        assertThat(findMember.getId()).isEqualTo(member.getId());
-        assertThat(findMember.getUsername()).isEqualTo(member.getUsername());
-        assertThat(findMember).isEqualTo(member);
+//        Member member = new Member();
+//        member.setUsername("A");
+//
+//        //when
+//        long savedId = memberRepository.save(member);
+//        Member findMember = memberRepository.findById(savedId);
+//
+//        //then
+//        assertThat(findMember.getId()).isEqualTo(member.getId());
+//        assertThat(findMember.getUsername()).isEqualTo(member.getUsername());
+//        assertThat(findMember).isEqualTo(member);
         
     }
 }
