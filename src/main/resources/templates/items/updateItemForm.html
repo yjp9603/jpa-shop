@@ -1,9 +1,9 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
-<head th:replace="fragments/header :: header" />
+<head th:replace="fragments/header :: header"></head>
 <body>
 <div class="container">
-    <div th:replace="fragments/bodyHeader :: bodyHeader"/>
+    <div th:replace="fragments/bodyHeader :: bodyHeader"></div>
     <form th:object="${form}" method="post">
         <input type="hidden" th:field="*{id}" />
         <div class="form-group">
@@ -28,7 +28,7 @@ control" placeholder="수량을 입력하세요" /> </div>
                    placeholder="ISBN을 입력하세요" /> </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
-    <div th:replace="fragments/footer :: footer" />
+    <div th:replace="fragments/footer :: footer"></div>
 </div> <!-- /container -->
 </body>
 </html>

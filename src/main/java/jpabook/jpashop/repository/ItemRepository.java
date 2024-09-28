@@ -4,6 +4,7 @@ import jakarta.persistence.EntityManager;
 import jpabook.jpashop.domain.item.Item;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -28,4 +29,10 @@ public class ItemRepository {
         return em.createQuery("select i from Item i", Item.class)
                 .getResultList();
     }
+
+//    // 머지 사용 방식 : 사용 X
+//    @Transactional
+//    void update(Item itemParam) { //itemParam: 파리미터로 넘어온 준영속 상태의 엔티티
+//        Item mergeItem = em.merge(itemParam);
+//    }
 }
